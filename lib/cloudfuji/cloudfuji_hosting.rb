@@ -2,7 +2,7 @@ module FatFreeCRM
   module Cloudfuji
     class << self
       def enable_cloudfuji!
-        self.load_hooks!
+        self.load_observers!
         self.extend_user!
         self.setup_authentication!
       end
@@ -33,7 +33,7 @@ module FatFreeCRM
         end
       end
 
-      def load_hooks!
+      def load_observers!
         Dir["#{Dir.pwd}/lib/cloudfuji/event_observers/*.rb"].each { |file| require file }
       end
 
