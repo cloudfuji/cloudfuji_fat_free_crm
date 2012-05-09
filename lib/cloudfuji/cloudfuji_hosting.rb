@@ -2,9 +2,9 @@ module FatFreeCRM
   module Cloudfuji
     class << self
       def enable_cloudfuji!
-        self.load_observers!
-        self.extend_user!
-        self.setup_authentication!
+        load_observers!
+        extend_user!
+        setup_authentication!
       end
 
       def extend_user!
