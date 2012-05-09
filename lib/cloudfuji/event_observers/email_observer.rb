@@ -61,14 +61,7 @@ module Cloudfuji
       subject = find_or_create_activity_subject!
       puts "Found subject: #{subject.inspect}"
 
-      # Placeholder for now
-      user = User.first
-      puts "Assigning to user: #{user.inspect}"
-
-      note         = subject.comments.new
-      note.comment = message
-      note.user    = user
-      note.save
+      subject.versions.create! :event => message
     end
 
     def data

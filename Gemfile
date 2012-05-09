@@ -7,7 +7,7 @@ begin
 rescue LoadError
 end
 
-gem 'fat_free_crm', '>= 0.11.2'
+gem 'fat_free_crm', '>= 0.11.3'
 
 gem 'premailer', :require => false
 
