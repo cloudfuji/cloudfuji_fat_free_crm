@@ -1,1 +1,1 @@
-require './lib/cloudfuji/cloudfuji_hosting'
+require 'cloudfuji/cloudfuji_hosting'
